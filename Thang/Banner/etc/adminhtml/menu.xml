@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Thang_Banner::Banner_manager" title="Banner Manager"  module="Thang_Banner" sortOrder="1"  action="banner/index/index" resource="Thang_Banner::Banner_manager"/>
+        <add id="Thang_Banner::list_banner" title="List Banners" module="Thang_Banner" action="banner" resource="Thang_Banner::banner_manager" parent="Thang_Banner::Banner_manager"/>
+        <add id="Thang_Banner::new_banner" title="New Banner" module="Thang_Banner" action="banner/index/new" resource="Thang_Banner::save" parent="Thang_Banner::Banner_manager"/>
+    </menu>
+</config>
